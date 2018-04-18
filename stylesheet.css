@@ -1,0 +1,60 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+@font-face {
+    font-family: "PressStart2P";
+    src: url("PressStart2P.ttf");
+}
+#btnSubmit {
+    background-color: blue;
+    src: url("PressStart2P.ttf");
+    font-family: "PressStart2P";
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #5f98f9;
+    color: white;
+    width: 10em;
+    height: 3em;
+}
+#areasignature {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+}
+#canvsignature {
+    border: dashed 2px black;
+    width: 600px;
+    height: 100px;
+    display: inline;
+    position: absolute;
+}
+.imageSignature {
+    border: dashed 2px black;
+    width: 600px;
+    height: 100px;
+    display: inline;
+    position: absolute;
+}
+.content {
+    src: url("PressStart2P.ttf");
+    font-family: "PressStart2P";
+    font-size: 14px;
+    text-align: center;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.texts {
+    src: url("PressStart2P.ttf");
+    font-family: "PressStart2P";
+}
+.error {
+    src: url("PressStart2P.ttf");
+    font-family: "PressStart2P";
+    color: red;
+}

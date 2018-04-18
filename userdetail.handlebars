@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheet.css">
+  </head>
+  <body>
+<div class="content">
+{{#error}}
+<div class"error">ERORROR</div>
+{{/error}}
+<div>
+    <br>
+    <img src="mario.jpg" alt="Super Mario high" class="logo" />
+    <br>
+    <h1>Edit your prfile</h1>
+    <form method="POST" action="/userdetail" id="form" name="form">
+        <br>
+        <input id="age" name="age">
+        <br>
+        Age
+        <br>
+        <input id="city" name="city">
+        <br>
+        City
+        <br>
+        {{#errorURL}}
+        <p class="error">Please enter a valid URL</p>
+        {{/errorURL}}
+        <input id="url" name="url">
+        <br>
+        Homepage
+        <br>
+        <input id="btnSubmit" type="submit" value="continue"/>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+</div>
+<script src="/script.js"></script>
+</div>
+<footer>{{> copyright}}</footer>
+</body>
+</html>

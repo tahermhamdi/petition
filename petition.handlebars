@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheet.css">
+  </head>
+  <body>
+<div class="content">
+{{#error}}
+<div class"error">ERROR</div>
+{{/error}}
+<div>
+    <h1>A world with marijuana is within reach but we won't get there without your support. Join our campaign today</h1>
+    <form method="POST" action="/petition" id="form" name="form">
+        <input name="datasignature" id="datasignature" value="" type="hidden">
+        <br>
+        <img src="mario.jpg" alt="Super Mario high" class="logo" >
+        <br>
+        <div id="areasignature">
+        {{#if nosign}}
+        <canvas id="canvsignature" width="600" height="100"></canvas>
+        {{else}}
+        <img src="{{signature}}" class="imageSignature"/>
+        {{/if}}
+        </div>
+        <h3>Sign Here</h3>
+        <br>
+        <br>
+        <input id="btnSubmit" type="submit" value="Sign up" class="buttons"/>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <br>
+    </form>
+</div>
+<script src="/script.js"></script>
+</div>
+<footer>{{> copyright}}</footer>
+</body>
+</html>

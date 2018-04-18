@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheet.css">
+
+  </head>
+<body>
+<div class="content">
+{{#error}}
+<div class"error">ERROR</div>
+{{/error}}
+<h1>Thank you for signing our petition to legalize marijuana during the
+<span style="color: red">SPICED ACADEMY</span>
+program for a sake of better quality of code</h1>
+<img src="mario.jpg" alt="Super Mario high" class="logo" >
+<div id="areasignature">
+<img src="{{signature}}" class="imageSignature"/>
+</div>
+<a href="/signers"><h4>See all {{count}} signers</h4></a>
+<a href="/user/edit"><h4>Edit profile</h4></a>
+<a href="/thankyou/confirmdelete"><h4>Delete signature</h4></a>
+<a href="/thankyou/logout"><h4>Log out</h4></a>
+</div>
+<footer>{{> copyright}}</footer>
+</body>
+</html>

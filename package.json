@@ -1,0 +1,29 @@
+{
+    "name": "petition",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "engines": {
+        "node": "8.9.4"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.18.2",
+        "connect-redis": "^3.3.3",
+        "cookie-parser": "^1.4.3",
+        "cookie-session": "^2.0.0-beta.3",
+        "csurf": "^1.9.0",
+        "express": "^4.14.0",
+        "express-handlebars": "^3.0.0",
+        "express-session": "^1.15.6",
+        "redis": "^2.8.0",
+        "spiced-pg": "github:spicedacademy/spiced-pg",
+        "valid-url": "^1.0.9"
+    }
+}

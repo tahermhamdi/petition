@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheet.css">
+  </head>
+  <body>
+<div class="content">
+{{#error}}
+<div class"error">ERROR</div>
+{{/error}}
+<div>
+    <img src="mario.jpg" alt="Super Mario high" class="logo" >
+    <br>
+    <h1>A world with marijuana is within reach but we won't get there without your support. Join our campaign today</h1>
+    <form method="POST" action="/register" id="form" name="form">
+        <br>
+        <input id="firstname" name="firstname">
+        <br>
+        <br>
+        First name
+        <br>
+        <input id="lastname" name="lastname">
+        <br>
+        <br>
+        Last name
+        <br>
+        <input id="email" name="email">
+        <br>
+        <br>
+        Email address
+        <br>
+        <input id="password" name="password" type="password">
+        <br>
+        <br>
+        Password
+        <br>
+        <br>
+        <input id="btnSubmit" type="submit" value="Sign up" class="buttons"/>
+        <br>
+        if you are already a member, please <a href="/login">log in</a>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+</div>
+<script src="/script.js"></script>
+</div>
+<footer>{{> copyright}}</footer>
+</body>
+</html>
